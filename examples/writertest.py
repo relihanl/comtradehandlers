@@ -18,7 +18,7 @@ The following code simulates phasor data within the COMTRADE format. See the fol
 """
 start_time = datetime.datetime.now()
 trigger_time = start_time + datetime.timedelta(milliseconds=20)
-comtradeWriter = writer.ComtradeWriter("test2.cfg", start_time, trigger_time, rev_year="1999",rec_dev_id=250)
+comtradeWriter = writer.ComtradeWriter("test2.cfg", start_time, trigger_time,rec_dev_id=250)
 
 created_id = comtradeWriter.add_digital_channel("RELAY1", 0, 0, 0)
 print("Created new digital channel " + str(created_id))
@@ -81,7 +81,7 @@ SECOND FILE
 
 start_time = datetime.datetime.now()
 trigger_time = start_time + datetime.timedelta(milliseconds=20)
-comtradeWriter2 = writer.ComtradeWriter("test3.cfg", start_time, trigger_time, rev_year="1999",rec_dev_id=250)
+comtradeWriter2 = writer.ComtradeWriter("test3.cfg", start_time, trigger_time,rec_dev_id=250)
 
 created_id = comtradeWriter2.add_digital_channel("RELAY1", 0, 0, 0)
 print("Created new digital channel " + str(created_id))
