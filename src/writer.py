@@ -195,7 +195,6 @@ class ComtradeWriter:
                                                      str(self.Dch_id[i]),
                                                      str(self.Dph[i]),
                                                      str(self.Dccbm[i]),
-                                                     str(self.Dccbm[i]),
                                                      str(self.y[i]))) + "\r\n")
 
         # write line frequency:
